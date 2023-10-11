@@ -28,5 +28,37 @@ Shery.imageEffect("#landing-bg", {
     noise_scale: { value: 15, range: [0, 100] },
   },
   debug: false,
-  gooey: false,
+  gooey: true,
+});
+
+//click event listener
+
+document.querySelectorAll(".elem").forEach((elem) => {
+  var h1s = elem.querySelectorAll("h1");
+  var index = 0;
+  let animating = false;
+
+  document.querySelector("main").addEventListener("click", (e) => {
+    if (!animating) {
+      animating = true;
+
+      gsap.to(h1s[index], {
+        top: "-=100%",
+        ease: Expo.easeInOut,
+        duration: 0.75,
+        onComplete: function () {
+          gsap.set(this._targets[0], { top: "100%" });
+          animating = false;
+        },
+      });
+
+      index === h1s.length - 1 ? (index = 0) : index++;
+
+      gsap.to(h1s[index], {
+        top: "-=100%",
+        ease: Expo.easeInOut,
+        duration: 0.75,
+      });
+    }
+  });
 });

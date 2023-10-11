@@ -49,13 +49,26 @@ nav a {
 #hero-left .elem {
   height: 9vw;
   overflow: hidden;
+
+  position: relative;
 }
 
 #hero-left .elem h1 {
+  position: absolute;
+
+  /* moving all h1s 100% below */
+  top: 100%;
+  left: 0;
+
   font-family: "kajiro";
   font-weight: 100;
   font-size: 9vw;
   line-height: 1;
+}
+
+#hero-left .elem h1:nth-child(1) {
+  top: 0;
+  left: 0;
 }
 
 #hero-left button {

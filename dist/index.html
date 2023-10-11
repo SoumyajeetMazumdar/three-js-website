@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="landing" class="h-screen w-full relative">
+      <div id="landing-bg">
+        <img src="./assets/1.jpg" alt="" class="w-full h-screen object-cover" />
+        <img
+          src="./assets/IMG_7565.jpg"
+          alt=""
+          class="w-full h-screen object-cover"
+        />
+        <img
+          src="./assets/IMG_7566.jpg"
+          alt=""
+          class="w-full h-screen object-cover"
+        />
+        <img
+          src="./assets//IMG_7567.jpg"
+          alt=""
+          class="w-full h-screen object-cover"
+        />
+        <img
+          src="./assets/IMG_7568.jpg"
+          alt=""
+          class="w-full h-screen object-cover"
+        />
+      </div>
+
+      <!-- this "landing-text center is only for superimposed text on the
+      backhground, and it does not allow clicking except links and buttons -->
+      <div
+        id="landing-text"
+        class="pointer-events-none bg-transparent absolute top-0 left-0 w-full h-screen"
+      >
+        <nav
+          class="py-5 flex items-center justify-between box-container pointer-events-auto"
+        >
+          <div id="nav-left" class="flex items-center gap-10">
+            <img src="./assets//raybanlogo.png" alt="" class="h-[40px]" />
+
+            <a href="#" class="">products</a>
+            <a href="#">about</a>
+          </div>
+
+          <div id="nav-right" class="flex gap-10 items-center">
+            <a href="#">luxe</a>
+            <a href="#">pricing</a>
+          </div>
+        </nav>
+
+        <div id="hero">
+          <div id="hero-left">
+            <div class="elem">
+              <h1>David chang 1</h1>
+              <h1>David chang 2</h1>
+              <h1>David chang 3</h1>
+              <h1>David chang 4</h1>
+              <h1>David chang 5</h1>
+            </div>
+            <div class="elem">
+              <h1>Give zero 1</h1>
+              <h1>Give zero 2</h1>
+              <h1>Give zero 3</h1>
+              <h1>Give zero 4</h1>
+              <h1>Give zero 5</h1>
+            </div>
+            <div class="elem">
+              <h1>funks 1</h1>
+              <h1>funks 2</h1>
+              <h1>funks 3</h1>
+              <h1>funks 4</h1>
+              <h1>funks 5</h1>
+            </div>
+            <button
+              class="pointer-events-auto bg-white text-black px-8 py-3 text-[3vw] font-thin mt-8"
+            >
+              Explore Now
+            </button>
+          </div>
+          <div id="hero-right" class="flex flex-col items-end">
+            <p class="text-right text-xs">Lorem ipsum dolor sit.</p>
+
+            <div id="img" class="w-[100%] h-52 bg-red-500 my-5">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1664298528358-790433ba0815?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt=""
+                class="object-cover h-full w-full"
+              />
+            </div>
+
+            <p class="text-right text-xs mb-16">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+              provident unde debitis numquam voluptas temporibus asperiores
+              tempora officia voluptatum magni recusandae harum illum ut ullam
+              laboriosam iusto, sit enim libero modi! Porro necessitatibus eaque
+              blanditiis.
+            </p>
+
+            <p class="text-right text-xs">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+              repellat, aut, quo aperiam pariatur dignissimos rem illo
+              consectetur necessitatibus nisi unde. Iste in veniam culpa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

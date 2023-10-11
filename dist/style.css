@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav a {
+  /* font-family: Consolas; */
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: white;
+  font-size: 14px;
+}
+
+.box-container {
+  width: 97.5%;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+#hero {
+  color: white;
+  /* center the hero element*/
+  position: absolute;
+  top: 50%;
+  left: 1.25%;
+  transform: translateY(-50%);
+
+  display: flex;
+  justify-content: space-between;
+  width: 97.5%;
+  /* height: 100px; */
+  /* background-color: red;
+   */
+}
+
+#hero-left {
+  width: 40%;
+  min-width: 40vw;
+  /* border: 1px dashed green; */
+}
+
+#hero-right {
+  width: 20%;
+  min-width: 20vw;
+  /* height: 100px; */
+  /* border: 1px dashed green; */
+}
+
+#hero-left .elem {
+  height: 9vw;
+  overflow: hidden;
+}
+
+#hero-left .elem h1 {
+  font-family: "kajiro";
+  font-weight: 100;
+  font-size: 9vw;
+  line-height: 1;
+}
+
+#hero-left button {
+  font-family: "kajiro";
+}

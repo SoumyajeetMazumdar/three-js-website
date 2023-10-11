@@ -45,7 +45,7 @@ document.querySelectorAll(".elem").forEach((elem) => {
       gsap.to(h1s[index], {
         top: "-=100%",
         ease: Expo.easeInOut,
-        duration: 0.75,
+
         onComplete: function () {
           gsap.set(this._targets[0], { top: "100%" });
           animating = false;
@@ -57,7 +57,6 @@ document.querySelectorAll(".elem").forEach((elem) => {
       gsap.to(h1s[index], {
         top: "-=100%",
         ease: Expo.easeInOut,
-        duration: 0.75,
       });
     }
   });
